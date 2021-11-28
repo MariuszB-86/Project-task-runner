@@ -7,6 +7,26 @@ body {
   margin: 0;
 }
 
+.title {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 40px;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+}
+
+.title h3 {
+  font-family: "Lora", serif;
+  font-weight: lighter;
+}
+
 /* Splash */
 .splash {
   height: 729px;
@@ -89,4 +109,61 @@ body {
   text-transform: uppercase;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
+}
+
+/* Services */
+.services {
+  height: 570px;
+}
+
+.box-services_1,
+.box-services_2,
+.box-services_3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px 0 30px;
+  text-align: center;
+}
+
+.box-services_1 h3,
+.box-services_2 h3,
+.box-services_3 h3 {
+  font-family: "Outfit", sans-serif;
+}
+
+.box-services_1 p,
+.box-services_2 p,
+.box-services_3 p {
+  font-family: "Lora", serif;
+}
+
+.box-services_1::before {
+  position: absolute;
+  display: block;
+  content: url("/images/Icon-Basket.png");
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box-services_2::before {
+  position: absolute;
+  display: block;
+  content: url("/images/Icon-Laptop.png");
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box-services_3::before {
+  position: absolute;
+  display: block;
+  content: url("/images/Icon-Locked.png");
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
 }
