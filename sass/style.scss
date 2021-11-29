@@ -195,7 +195,45 @@ body{
     }
 }
 
+/* Footer */
 
+.footer .row{
+    height: 120px;
+}
+.footer-text{
+    margin: auto;
+    font-family: $font-two;
+}
+.footer-links {
+    margin: auto;
+    ul{
+        display: flex;
+        height: 100%;
+        list-style: none;
+        align-items: center;
+        li{
+            margin: 0 20px 0 0;
+            a{
+                text-decoration: none;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: black;
+                border-radius: 50%;
+                position: relative;
+                font-size: 0;
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
 
 
     
