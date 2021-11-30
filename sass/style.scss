@@ -118,10 +118,7 @@ body{
     margin: 60px 0 60px 0;
 }
 
-.box-services_1,
-.box-services_2,
-.box-services_3{
-    position: relative;
+.box-services{
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -137,31 +134,36 @@ body{
     }
 }
 
-.box-services_1::before{
+.services_icon_1,
+.services_icon_2,
+.services_icon_3{
+    width: 72px;
+    height: 72px;
+    position: relative;
+}
+.services_icon_1::after{
     position: absolute;
     display: block;
     content: url("../images/Icon-Basket.png");
-    top: 17%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
-
-.box-services_2::before{
+.services_icon_2::after{
     position: absolute;
     display: block;
     content: url("../images/Icon-Laptop.png");
-    top: 18%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
-
-.box-services_3::before{
+.services_icon_3::after{
     position: absolute;
     display: block;
     content: url("../images/Icon-Locked.png");
-    top: 17%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 /* Portfolio */
@@ -236,9 +238,11 @@ body{
 
 @media (min-width: 320px) and (max-width: 959px) {
     .navigation ul{
-        justify-content: center;
+        justify-content: flex-start;
+        li{
+            margin: 0 0 0 20px;
+        }
     }
-
 }
 
 
